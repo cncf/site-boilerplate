@@ -1,0 +1,4 @@
+title        = "CNCF Docs in a Box"
+baseURL      = "https://docs-in-a-box.netlify.com"
+disableKinds = ["sitemap", "taxonomy", "taxonomyTerm"]
+languageCode = "en-us"
