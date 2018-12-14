@@ -5,8 +5,15 @@
     <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
     {{ partial "css.html" . }}
   </head>
-  <body>
-    {{ block "main" . }}
-    {{ end }}
+  <body class="page">
+    <div class="main">
+      {{ partial "navbar.html" . }}
+
+      {{ block "main" . }}
+      {{ end }}
+    </div>
+
+    {{ partial "footer.html" . }}
+    {{ partial "javascript.html" . }}
   </body>
 </html>

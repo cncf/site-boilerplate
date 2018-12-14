@@ -24,3 +24,12 @@ $family-code: "{{ $monospaceFont }}", monospace
 
 @import "bulma/sass/utilities/derived-variables"
 @import "bulma/bulma"
+
+// Force fixed bottom footer
+.page
+  display: flex
+  flex-direction: column
+  min-height: 100vh
+
+  .main
+    flex: 1

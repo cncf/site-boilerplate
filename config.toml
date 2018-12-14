@@ -4,9 +4,16 @@ disableKinds = ["sitemap", "taxonomy", "taxonomyTerm"]
 languageCode = "en-us"
 
 [params]
+description   = "Boilerplate for CNCF project websites"
 sansSerifFont = "Open Sans"
 monospaceFont = "Fira Mono"
 fontAwesomeVersion = "5.6.1"
+js = ["jquery-3.3.1", "app"]
+
+[params.logos]
+navbar = "https://raw.githubusercontent.com/cncf/artwork/master/cncf/icon/color/cncf-icon-color.png"
+footer = "https://raw.githubusercontent.com/cncf/artwork/master/cncf/icon/color/cncf-icon-color.png"
+
 
 [[params.fonts]]
 name = "Open Sans"
@@ -15,3 +22,4 @@ sizes = [300, 400, 600, 700]
 [[params.fonts]]
 name = "Fira Mono"
 sizes = [300, 400, 600, 700]
+

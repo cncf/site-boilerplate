@@ -1,0 +1,19 @@
+{{- $isHome := .IsHome }}
+{{- $logo   := .Site.Params.logos.navbar }}
+<nav class="navbar is-dark">
+  <div class="container">
+    <div class="navbar-brand">
+      {{- if not $isHome }}
+      <a class="navbar-item is-hidden-desktop" href="{{ .Site.BaseURL }}">
+        <img src="{{ $logo }}" alt="Navbar logo">
+      </a>
+      {{- end }}
+
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+  </div>
+</nav>
