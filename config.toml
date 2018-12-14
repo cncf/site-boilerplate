@@ -2,3 +2,16 @@ title        = "CNCF Docs in a Box"
 baseURL      = "https://docs-in-a-box.netlify.com"
 disableKinds = ["sitemap", "taxonomy", "taxonomyTerm"]
 languageCode = "en-us"
+
+[params]
+sansSerifFont = "Open Sans"
+monospaceFont = "Fira Mono"
+fontAwesomeVersion = "5.6.1"
+
+[[params.fonts]]
+name = "Open Sans"
+sizes = [300, 400, 600, 700]
+
+[[params.fonts]]
+name = "Fira Mono"
+sizes = [300, 400, 600, 700]
