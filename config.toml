@@ -34,7 +34,6 @@ icon = "twitter"
 color = "twitter-blue"
 handle = "CloudNativeFdn"
 
-
 [[params.fonts]]
 name = "Open Sans"
 sizes = [300, 400, 600, 700]

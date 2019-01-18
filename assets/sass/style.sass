@@ -1,4 +1,4 @@
-{{- $fonts    := .Params.fonts }}
+{{- $fonts    := site.Params.fonts }}
 {{- $fontSlice := (slice) }}
 {{- range $fonts }}
 {{- $fontSlice = $fontSlice | append (printf "%s:%s" (replace .name " " "+") (delimit .sizes ",")) }}
@@ -12,8 +12,8 @@
 @charset "utf-8"
 
 // External imports
-@import url("{{ $fontsUrl }}")
-@import url("{{ $fontAwesomeUrl }}")
+@import url({{ $fontsUrl }})
+@import url({{ $fontAwesomeUrl }})
 
 // Project-specific colors and variables
 $twitter-blue: #1da1f2
