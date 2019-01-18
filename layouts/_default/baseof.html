@@ -2,7 +2,7 @@
 <html>
   <head>
     {{ partial "meta.html" . }}
-    <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
+    <title>{{ block "title" . }}{{ site.Title }}{{ end }}</title>
     {{ partial "css.html" . }}
   </head>
   <body class="page">

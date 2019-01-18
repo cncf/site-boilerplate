@@ -1,10 +1,10 @@
-function offCanvasToggle() {
-  $('.navbar-burger').click(function() {
-    $('.off-canvas').toggleClass('is-visible');
-    $('.canvas').toggleClass('is-pushed');
+function navbarBurger() {
+  $(".navbar-burger").click(function() {
+    $(".navbar-burger").toggleClass("is-active");
+    $(".navbar-menu").toggleClass("is-active");
   });
 }
 
 $(function() {
-  offCanvasToggle();
+  navbarBurger();
 });

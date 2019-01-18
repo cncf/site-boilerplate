@@ -1,19 +1,44 @@
-{{- $isHome := .IsHome }}
-{{- $logo   := .Site.Params.logos.navbar }}
-<nav class="navbar is-dark">
+{{ $home   := site.BaseURL }}
+{{ $logo   := site.Params.logos.navbar }}
+{{ $menu   := site.Menus.navbar }}
+{{ $social := site.Params.social }}
+<nav class="navbar has-shadow">
   <div class="container">
     <div class="navbar-brand">
-      {{- if not $isHome }}
-      <a class="navbar-item is-hidden-desktop" href="{{ .Site.BaseURL }}">
-        <img src="{{ $logo }}" alt="Navbar logo">
+      <a class="navbar-item" href="{{ $home }}">
+        <img src="{{ $logo }}" alt="Project navbar logo">
       </a>
-      {{- end }}
 
-      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navMenu">
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
       </a>
+    </div>
+
+    <div class="navbar-menu" id="navMenu">
+      <div class="navbar-end">
+        {{ range $menu }}
+        <a class="navbar-item" href="{{ .URL }}">
+          {{ .Name }}
+        </a>
+        {{ end }}
+
+        <div class="navbar-item">
+          <div class="buttons">
+            {{ range $social }}
+            <a class="button is-{{ .color | default "white" }} has-text-weight-bold" href="{{ .url }}" target="_blank">
+              <span class="icon">
+                <i class="fab fa-{{ .icon }}"></i>
+              </span>
+              <span>
+                {{ .name }}
+              </span>
+            </a>
+            {{ end }}
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </nav>

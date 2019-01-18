@@ -1,18 +1,38 @@
-title        = "CNCF Docs in a Box"
-baseURL      = "https://docs-in-a-box.netlify.com"
+title = "CNCF Docs in a Box"
+baseURL = "https://docs-in-a-box.netlify.com"
 disableKinds = ["sitemap", "taxonomy", "taxonomyTerm"]
 languageCode = "en-us"
 
 [params]
-description   = "Boilerplate for CNCF project websites"
-sansSerifFont = "Open Sans"
-monospaceFont = "Fira Mono"
-fontAwesomeVersion = "5.6.1"
+description = "Boilerplate for CNCF project websites"
+sansseriffont = "Open Sans"
+monospacefont = "Fira Mono"
+fontawesomeversion = "5.6.3"
 js = ["jquery-3.3.1", "app"]
+logo = "https://raw.githubusercontent.com/cncf/artwork/master/cncf/horizontal/color/cncf-color.png"
 
 [params.logos]
-navbar = "https://raw.githubusercontent.com/cncf/artwork/master/cncf/icon/color/cncf-icon-color.png"
+navbar = "https://raw.githubusercontent.com/cncf/artwork/master/cncf/horizontal/color/cncf-color.png"
 footer = "https://raw.githubusercontent.com/cncf/artwork/master/cncf/icon/color/cncf-icon-color.png"
+
+[params.social.github]
+name = "GitHub"
+url  = "https://github.com/cncf/docs-in-a-box"
+icon = "github"
+color = "black"
+
+[params.social.slack]
+name = "Slack"
+url = "https://slack.cncf.io/"
+icon = "slack"
+color = "slack-green"
+
+[params.social.twitter]
+name = "Twitter"
+url = "https://twitter.com/CloudNativeFdn"
+icon = "twitter"
+color = "twitter-blue"
+handle = "CloudNativeFdn"
 
 
 [[params.fonts]]
@@ -21,5 +41,14 @@ sizes = [300, 400, 600, 700]
 
 [[params.fonts]]
 name = "Fira Mono"
-sizes = [300, 400, 600, 700]
+sizes = [400]
 
+[[menu.navbar]]
+name = "Docs"
+url = "/docs"
+weight = 1
+
+[[menu.navbar]]
+name = "Blog"
+url = "https://medium.com"
+weight = 2
