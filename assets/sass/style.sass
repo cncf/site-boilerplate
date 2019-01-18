@@ -31,19 +31,40 @@ $family-sans-serif: "{{ $sansSerifFont }}", BlinkMacSystemFont, -apple-system, "
 $family-code: "{{ $monospaceFont }}", monospace
 $navbar-burger-color: $primary
 $code: $primary
+$section-padding: 1.5rem
 
 @import "bulma/sass/utilities/derived-variables"
 
 $colors: mergeColorMaps(("twitter-blue": ($twitter-blue, $white), "slack-green": ($slack-green, $white)), $colors)
 
 @import "bulma/bulma"
+@import "bulma-dashboard/src/bulma-dashboard"
 
 .card
+  margin: 1.5rem 0
+
   &.is-shadowless
     box-shadow: none
-  
-  &.has-no-padding
+
+  .card-content
     padding: 0
+
+.dashboard-panel
+  &.left
+    border-right: 1px solid $grey-lighter
+
+  &-main
+    &-toc
+      ul
+        li
+          font-size: 1.25rem
+
+          & + li
+            margin-top: .25rem
+
+.dashboard-panel-logo
+  width: 40%
+  margin-bottom: 1rem
 
 .page
   display: flex
