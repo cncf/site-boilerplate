@@ -1,10 +1,11 @@
 {{ $home   := site.BaseURL }}
-{{ $logo   := site.Params.logos.navbar }}
+{{ $logo   := site.Params.logos.navbar | relURL }}
 {{ $menu   := site.Menus.navbar }}
 {{ $social := site.Params.social }}
 {{ $config := site.Params.navbar }}
 {{ $shadow := $config.shadow }}
-<nav class="navbar{{ if $shadow }} has-shadow{{ end }}">
+{{ $fixed  := $config.fixed }}
+<nav class="navbar{{ if $shadow }} has-shadow{{ end }}{{ if $fixed }} is-fixed-top{{ end }}">
   <div class="container">
     <div class="navbar-brand">
       <a class="navbar-item" href="{{ $home }}">

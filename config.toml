@@ -43,27 +43,37 @@ name = "Fira Mono"
 sizes = [400]
 
 [params.navbar]
+fixed = true
 shadow = true
 
 [[params.features]]
-title = "Feature 1"
-description = "Feature 1 is a very important feature"
+title = "Blazing fast"
+description = "The Docs in a Box scaffold uses [Hugo](https://gohugo.io), the fastest static site generator on the planet"
 icon = "fas fa-rocket"
+
+[[params.features]]
+title = "Netlify support"
+description = "Deploy your site to [Netlify](https://netlify.com) in minutes"
+icon = "fas fa-rocket"
+url = "/docs"
+
+[[params.features]]
+title = "Easy configuration"
+description = "The project's `config.toml` Hugo config provides a wide variety of levers for customizing your site"
+icon = "fas fa-rocket"
+url = "/docs"
 
 [[params.features]]
 title = "Feature 2"
 description = "Feature 2 is potentially an even more important feature"
 icon = "fas fa-rocket"
+url = "/docs"
 
 [[params.features]]
 title = "Feature 2"
 description = "Feature 2 is potentially an even more important feature"
 icon = "fas fa-rocket"
-
-[[params.features]]
-title = "Feature 2"
-description = "Feature 2 is potentially an even more important feature"
-icon = "fas fa-rocket"
+url = "/docs"
 
 [[menu.navbar]]
 name = "Docs"

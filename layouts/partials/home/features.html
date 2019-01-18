@@ -1,18 +1,26 @@
 {{ $features := site.Params.features }}
+{{ with $features }}
 <section class="section">
   <div class="container">
     <div class="columns is-multiline">
       {{ range $features }}
+      {{ $url := .url }}
       <div class="column is-one-third">
         <div class="card is-shadowless">
           <div class="card-content">
-            <p class="title is-size-4 is-size-5-mobile">
-              {{ .title | markdownify }}
-            </p>
+            {{ with .title }}
+            <a class="title is-size-4 is-size-5-mobile has-text-weight-light" href="{{ $url }}">
+              {{ . | markdownify }}
+            </a>
 
+            <hr />
+            {{ end }}
+
+            {{ with .description }}
             <p>
-              {{ .description | markdownify }}
+              {{ . | markdownify }}
             </p>
+            {{ end }}
           </div>
         </div>
       </div>
@@ -20,3 +28,4 @@
     </div>
   </div>
 </section>
+{{ end }}
