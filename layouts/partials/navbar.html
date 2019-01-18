@@ -2,7 +2,9 @@
 {{ $logo   := site.Params.logos.navbar }}
 {{ $menu   := site.Menus.navbar }}
 {{ $social := site.Params.social }}
-<nav class="navbar has-shadow">
+{{ $config := site.Params.navbar }}
+{{ $shadow := $config.shadow }}
+<nav class="navbar{{ if $shadow }} has-shadow{{ end }}">
   <div class="container">
     <div class="navbar-brand">
       <a class="navbar-item" href="{{ $home }}">

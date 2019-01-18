@@ -1,0 +1,22 @@
+{{ $features := site.Params.features }}
+<section class="section">
+  <div class="container">
+    <div class="columns is-multiline">
+      {{ range $features }}
+      <div class="column is-one-third">
+        <div class="card is-shadowless">
+          <div class="card-content">
+            <p class="title is-size-4 is-size-5-mobile">
+              {{ .title | markdownify }}
+            </p>
+
+            <p>
+              {{ .description | markdownify }}
+            </p>
+          </div>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
