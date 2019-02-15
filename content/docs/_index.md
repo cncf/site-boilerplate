@@ -1,6 +1,6 @@
 ---
 title: Documentation
-description: Everything you need to know about Docs in a Box!
+description: This is the main documentation page
 ---
 
 Here is some content.

@@ -1,5 +1,3 @@
-# Docs in a Box
+# CNCF site boilerplate
 
-Documentation starter kit for [Cloud Native Computing Foundation](https://cncf.io) (CNCF) CNCFprojects.
-
-The site is currently available at https://docs-in-a-box.netlify.com.
+Website and documentation boilerplate for [Cloud Native Computing Foundation](https://cncf.io) (CNCF) projects using [Hugo](https://gohugo.io) and [Netlify](https://netlify.com).

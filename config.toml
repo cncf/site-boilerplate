@@ -1,5 +1,5 @@
-title = "CNCF Docs in a Box"
-baseURL = "https://docs-in-a-box.netlify.com"
+title = "CNCF Boilerplate"
+baseURL = "https://cncf-boilerplate.netlify.com"
 disableKinds = ["sitemap", "taxonomy", "taxonomyTerm"]
 languageCode = "en-us"
 pygmentsCodefences = true
@@ -21,7 +21,7 @@ panel = "https://raw.githubusercontent.com/cncf/artwork/master/cncf/icon/color/c
 
 [params.social.github]
 name = "GitHub"
-url  = "https://github.com/cncf/docs-in-a-box"
+url  = "https://github.com/cncf/site-boilerplate"
 icon = "github"
 color = "black"
 
@@ -52,7 +52,7 @@ shadow = true
 
 [[params.features]]
 title = "Blazing fast"
-description = "The Docs in a Box scaffold uses [Hugo](https://gohugo.io), the fastest static site generator on the planet"
+description = "This project scaffold uses [Hugo](https://gohugo.io), the fastest static site generator on the planet"
 icon = "fas fa-rocket"
 
 [[params.features]]
